@@ -17,7 +17,6 @@ for a in range(10):
         score = div.xpath("./tr/td[2]/div[2]/span[2]/text()")[0]
         num = div.xpath("./tr/td[2]/div[2]/span[3]/text()")[0].strip("(").strip().strip(")").strip()
         scrible = div.xpath("./tr/td[2]/p[2]/span/text()")
-
         if len(scrible) > 0:
             print("{},{},{},{},{}\n".format(title,href,score,num,scrible[0]))
         else:
